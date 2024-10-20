@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mariusz Jakubiak MZ105</title>
+    <link rel="stylesheet" href="style.css" class="rel">
+</head>
+<body>
+    <header><h1>Kamień Papier Nożyce</h1></header>
+    <div id="rundy">
+        <h1 class="wybierzRundy">Podaj ilość rund:</h1>
+        <input type="number" id="runda" onchange="rundy()"><br />
+        <input type="button" id="reset" onclick="resetuj()" value="Reset gry">
+        </div>
+    <div class="tabela">
+        <div id="userLabel" class="badge">Gracz</div>
+        <div id="compLabel" class="badge">Komputer</div>
+        <span id="userScore">0</span>:<span id="compScore">0</span>
+    </div>
+    <div class="wynik">Czekam na ruch!</div>
+    <div class="wybory">
+        <div class="wybor" id="kamien"><img src="images/rock.svg"></div>
+        <div class="wybor" id="papier"><img  src="images/paper.svg"></div>
+        <div class="wybor"  id="nozyce"><img src="images/scissors.svg"></div>
+    </div>
+    <p id="move">Wykonaj ruch.</p>
+    <script src="main.js"></script>
+    <div class="footer">
+        <h3>Made by Mariusz Jakubiak, 2019</h3>
+    </div>
+</body>
+</html>
